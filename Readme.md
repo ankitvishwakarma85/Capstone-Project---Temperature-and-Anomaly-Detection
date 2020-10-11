@@ -19,9 +19,7 @@ Sending an Email using Mailgun services when temperature is not within the presc
 
 # Steps :
 **1) Connect the LM35 to the bolt Module**
-
 Step 1: Hold the sensor in a manner such that you can read LM35 written on it.
-
 Step 2: In this position, identify the pins of the sensor as VCC, Output and Gnd from your left to right.
 
 In the above image, VCC is connected to the red wire, Output is connected to the orange wire and Gnd is connected to the brown wire.Step 3: Using male to female wire connect the 3 pins of the LM35 to the Bolt Wifi Module as follows:
@@ -92,12 +90,12 @@ Algorithm:
 8) Wait for 10 seconds.
 9) Repeat from step 1.
 
-Code :
+# Main Code :
 We have to import our ( sms_conf & email_conf ) files which have all the credentials, json and time.
 Also we import our Bolt python library which will let us fetch the data stored in Bolt Cloud and then based on value send Email and SMS.
 The math and statistics libraries will be required for calculating the Z-score and the threshold boundaries.
 ```bash
-import email_conf, sms_conf, json, time, math, statistic
+import email_conf, sms_conf, json, time, math, statistics
 from boltiot import Email, Bolt, Sms
 ```
 The following lies code helps define a function which calculates the Z-score and the using the Z-score calculates the boundaries required for anomaly detection.
