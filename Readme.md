@@ -24,9 +24,9 @@ Step 2: In this position, identify the pins of the sensor as VCC, Output and Gnd
 
 In the above image, VCC is connected to the red wire, Output is connected to the orange wire and Gnd is connected to the brown wire.Step 3: Using male to female wire connect the 3 pins of the LM35 to the Bolt Wifi Module as follows:
 
-VCC pin of the LM35 connects to 5v of the Bolt Wifi module.
-Output pin of the LM35 connects to A0 (Analog input pin) of the Bolt Wifi module.
-Gnd pin of the LM35 connects to the Gnd.
+* VCC pin of the LM35 connects to 5v of the Bolt Wifi module.
+* Output pin of the LM35 connects to A0 (Analog input pin) of the Bolt Wifi module.
+* Gnd pin of the LM35 connects to the Gnd.
 
 **2) Creating a product on Bolt cloud to get the upper, lower temperature limits of the Refrigerator**
 
@@ -91,9 +91,9 @@ Algorithm:
 9) Repeat from step 1.
 
 # Main Code :
-We have to import our ( sms_conf & email_conf ) files which have all the credentials, json and time.
-Also we import our Bolt python library which will let us fetch the data stored in Bolt Cloud and then based on value send Email and SMS.
-The math and statistics libraries will be required for calculating the Z-score and the threshold boundaries.
+* We have to import our ( sms_conf & email_conf ) files which have all the credentials, json and time.
+* Also we import our Bolt python library which will let us fetch the data stored in Bolt Cloud and then based on value send Email and SMS.
+* The math and statistics libraries will be required for calculating the Z-score and the threshold boundaries.
 ```bash
 import email_conf, sms_conf, json, time, math, statistics
 from boltiot import Email, Bolt, Sms
