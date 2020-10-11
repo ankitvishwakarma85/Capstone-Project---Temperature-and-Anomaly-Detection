@@ -35,6 +35,7 @@ Step 3: Using male to female wire connect the 3 pins of the LM35 to the Bolt Wif
 **2) Creating a product on Bolt cloud to get the upper, lower temperature limits of the Refrigerator**
 
 **3) Writing Code for the product**
+
 Save the code and exits.
 
 Later link the product to the bolt module and deploy the configuration.
@@ -42,6 +43,7 @@ Later link the product to the bolt module and deploy the configuration.
 **4) Let the module rest for about 2 hours and see the output.**
 
 **5) Analyse the output and decide the maximum and the minimum limit**
+
 As you can see the sudden change is when the module is kept in the fridge.
 
 From the graph it is clear that :
