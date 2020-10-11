@@ -203,3 +203,14 @@ while True:
         print ("Error",e)
     time.sleep(10)
 ```
+
+**7) Running the python code and output**
+
+Now that we have written the code for anomaly detection lets run the code.
+
+Once that is done, run the anomaly detection code using the following command
+```bash
+python3 anomaly_detection.py
+```
+
+After about 10 seconds, the system will start printing the values, as per the following image; and alert you by Email if the thershold temperature exceed and alert you also by Sms if someone opens the fridge.
